@@ -1,3 +1,4 @@
 <% @patient.appointments.each do |appointment| %>
-  <%= appointment.appointment_readable_time %> - <%= link_to appointment.doctor.name, doctor_path(appointment.doctor) %><br />
+  <%= appointment.appointment_readable_time %><br/>
+  <%= link_to appointment.doctor.name, doctor_path(appointment.doctor) %><br />
 <% end %>
